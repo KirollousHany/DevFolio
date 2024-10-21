@@ -1,0 +1,390 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .title {
+    h3 {
+      font-size: 40px;
+    }
+  }
+  #navbar {
+    .nav-item {
+      width: fit-content;
+    }
+    .nav-link::before {
+      left: 0;
+    }
+
+    .nav-link:hover::before {
+      width: 100%;
+    }
+  }
+  #head {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .lead {
+    font-size: 16px;
+  }
+  .title {
+    h3 {
+      font-size: 35px;
+    }
+  }
+  #head {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  #about {
+    .container {
+      .p-custom {
+        padding: 64px 20px;
+      }
+      .info {
+        .profile {
+          .details {
+            ul {
+              li {
+                font-size: 15px;
+                span {
+                  font-size: 17px !important;
+                }
+              }
+            }
+          }
+        }
+        .skills {
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+      .caption {
+        h5 {
+          font-size: 25px !important ;
+        }
+        h5::before {
+          width: 80px !important;
+        }
+      }
+    }
+  }
+  #services {
+    .items {
+      .container {
+        .item {
+          .icon {
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+            box-shadow: 0 0 0 7px var(--primary-color);
+          }
+          &:hover .icon {
+            box-shadow: 0 0 0 7px #cde1f8;
+          }
+          .caption {
+            h2 {
+              font-size: 19px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .counter {
+    padding-block: 80px;
+
+    .container {
+      .row {
+        .item {
+          .icon {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            box-shadow: 0 0 0 7px #cde1f8;
+          }
+          .caption {
+            h2 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    .items {
+      .container {
+        .card {
+          .card-body {
+            h2 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonial {
+    .container {
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            img {
+              height: 100px !important;
+              width: 100px !important;
+            }
+            .img-oval {
+              height: 100px !important;
+              width: 85px !important;
+            }
+            .caption {
+              h4 {
+                font-size: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #blog {
+    .container {
+      .card {
+        .card-body {
+          h5 {
+            font-size: 19px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .card-footer {
+          a {
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+        .date {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  #contact {
+    .container {
+      .contact-title {
+        h5 {
+          font-size: 25px;
+        }
+
+        h5::before {
+          width: 80px;
+        }
+      }
+
+      form {
+        button {
+          font-size: 15px;
+          padding: 7px 16px;
+        }
+
+        textarea,
+        input {
+          font-size: 14px;
+          padding: 7px 10px;
+        }
+      }
+
+      .info {
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .icons {
+        .icon {
+          width: 30px;
+          height: 30px;
+          i {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .lead {
+    font-size: 15px;
+  }
+  .title {
+    h3 {
+      font-size: 30px;
+    }
+  }
+  #head {
+    h1 {
+      font-size: 35px;
+    }
+  }
+  #about {
+    .container {
+      .p-custom {
+        padding: 64px 20px;
+      }
+      .info {
+        .profile {
+          row-gap: 10px;
+          .details {
+            ul {
+              li {
+                font-size: 14px;
+                span {
+                  font-size: 16px !important;
+                }
+              }
+            }
+          }
+        }
+        .skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  #services {
+    .items {
+      .container {
+        .item {
+          .caption {
+            h2 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .counter {
+    .container {
+      .row {
+        .item {
+          .caption {
+            h2 {
+              font-size: 23px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    .items {
+      .container {
+        .card {
+          .card-body {
+            h2 {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonial {
+    .container {
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            .caption {
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #blog {
+    .container {
+      .card {
+        .card-body {
+          h5 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .card-footer {
+          a {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        .date {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #contact {
+    .container {
+      form {
+        button {
+          font-size: 14px;
+        }
+
+        textarea,
+        input {
+          font-size: 13px;
+        }
+      }
+
+      .info {
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .icons {
+        .icon {
+          i {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    p {
+      font-size: 14px;
+    }
+  }
+}

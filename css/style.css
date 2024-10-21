@@ -1,0 +1,654 @@
+:root {
+  --primary-color: #0078ff;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.title {
+  margin-bottom: 64px;
+
+  h3 {
+    font-size: 48px;
+  }
+  .line-b {
+    width: 40px;
+    margin: auto;
+    height: 5px;
+    background-color: var(--primary-color);
+  }
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+
+  .container {
+    .navbar-brand {
+      letter-spacing: 1px;
+    }
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: var(--primary-color) !important;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 8px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+  }
+
+  .nav-link:hover::before {
+    width: calc(100% - 16px);
+  }
+
+  .dropdown-item:hover {
+    color: var(--primary-color) !important;
+    background-color: #ffffff;
+  }
+
+  .dropdown-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+  }
+
+  .dropdown-menu > li:hover > .dropdown-menu {
+    display: block;
+  }
+
+  /* Make the dropdown align properly */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-submenu:hover > a {
+    background-color: #ffffff;
+  }
+}
+
+#head {
+  background: linear-gradient(#00000085, #00000085),
+    url(../images/hero-bg.jpg) center center/ cover;
+  background-attachment: fixed;
+  h1 {
+    font-size: 72px;
+  }
+
+  p::before {
+    content: "";
+    animation-name: text-change;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    color: white;
+  }
+}
+
+@keyframes text-change {
+  0% {
+    content: "D|";
+  }
+  1.136% {
+    content: "De|";
+  }
+  2.272% {
+    content: "Des|";
+  }
+  3.408% {
+    content: "Desi|";
+  }
+  4.544% {
+    content: "Desig|";
+  }
+  5.68% {
+    content: "Design|";
+  }
+  6.816% {
+    content: "Designe|";
+  }
+  7.952% {
+    content: "Designer|";
+  }
+  9.088% {
+    content: "Designer ";
+  }
+  10.224% {
+    content: "Designer|";
+  }
+  11.36% {
+    content: "Designer";
+  }
+  12.496% {
+    content: "Designer|";
+  }
+  13.632% {
+    content: "Designe|";
+  }
+  14.768% {
+    content: "Design|";
+  }
+  15.904% {
+    content: "Desig|";
+  }
+  17.04% {
+    content: "Desi|";
+  }
+  18.176% {
+    content: "Des|";
+  }
+  19.312% {
+    content: "De|";
+  }
+  20.448% {
+    content: "Dev|";
+  }
+  21.584% {
+    content: "Deve|";
+  }
+  22.72% {
+    content: "Devel|";
+  }
+  23.856% {
+    content: "Develo|";
+  }
+  24.992% {
+    content: "Develop|";
+  }
+  26.128% {
+    content: "Develope|";
+  }
+  27.264% {
+    content: "Developer|";
+  }
+  28.4% {
+    content: "Developer ";
+  }
+  29.536% {
+    content: "Developer|";
+  }
+  30.672% {
+    content: "Developer ";
+  }
+  31.808% {
+    content: "Developer|";
+  }
+  32.944% {
+    content: "Develope|";
+  }
+  34.08% {
+    content: "Develop|";
+  }
+  35.216% {
+    content: "Develo|";
+  }
+  36.352% {
+    content: "Devel|";
+  }
+  37.488% {
+    content: "Deve|";
+  }
+  38.624% {
+    content: "Dev|";
+  }
+  39.76% {
+    content: "De|";
+  }
+  40.896% {
+    content: "D|";
+  }
+  42.032% {
+    content: "|";
+  }
+  43.168% {
+    content: "F|";
+  }
+  44.304% {
+    content: "Fr|";
+  }
+  45.44% {
+    content: "Fre|";
+  }
+  46.576% {
+    content: "Free| ";
+  }
+  47.712% {
+    content: "Freel|";
+  }
+  48.848% {
+    content: "Freela|";
+  }
+  49.984% {
+    content: "Freelan|";
+  }
+  51.12% {
+    content: "Freelanc|";
+  }
+  52.256% {
+    content: "Freelance|";
+  }
+  53.392% {
+    content: "Freelancer|";
+  }
+  54.528% {
+    content: "Freelancer ";
+  }
+  55.664% {
+    content: "Freelancer|";
+  }
+  56.8% {
+    content: "Freelancer";
+  }
+  57.936% {
+    content: "Freelancer|";
+  }
+  59.072% {
+    content: "Freelance|";
+  }
+  60.208% {
+    content: "Freelanc|";
+  }
+  61.344% {
+    content: "Freelan| ";
+  }
+  62.48% {
+    content: "Freela|";
+  }
+  63.616% {
+    content: "Freel|";
+  }
+  64.752% {
+    content: "Free|";
+  }
+  65.888% {
+    content: " Fre| ";
+  }
+  67.024% {
+    content: " Fr|
+      ";
+  }
+  68.16% {
+    content: " F| ";
+  }
+  69.296% {
+    content: "|";
+  }
+  70.432% {
+    content: "P|";
+  }
+  71.568% {
+    content: "Ph|";
+  }
+  72.704% {
+    content: "Phot|";
+  }
+  73.84% {
+    content: "Photo|";
+  }
+  74.976% {
+    content: "Photog|";
+  }
+  76.112% {
+    content: "Photogr|";
+  }
+  77.248% {
+    content: "Photogra|";
+  }
+  78.384% {
+    content: "Photograp|";
+  }
+  79.52% {
+    content: "Photograph|";
+  }
+  80.656% {
+    content: "Photographe|";
+  }
+  81.792% {
+    content: "Photographer|";
+  }
+  82.928% {
+    content: "Photographer ";
+  }
+  84.064% {
+    content: "Photographer|";
+  }
+  85.2% {
+    content: "Photographer ";
+  }
+  86.336% {
+    content: "Photographer|";
+  }
+  87.472% {
+    content: "Photographe|";
+  }
+  88.608% {
+    content: "Photograph|";
+  }
+  89.744% {
+    content: "Photograp|";
+  }
+  90.88% {
+    content: "Photogra|";
+  }
+  92.016% {
+    content: "Photogr|";
+  }
+  93.152% {
+    content: "Photog|";
+  }
+  94.288% {
+    content: "Photo|";
+  }
+  95.424% {
+    content: "Phot|";
+  }
+  96.56% {
+    content: "Ph|";
+  }
+  97.696% {
+    content: "P|";
+  }
+  98.832% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+#about {
+  .container {
+    .p-custom {
+      padding: 64px 48px;
+      margin-bottom: 48px;
+      .info {
+        .profile {
+          .details {
+            span {
+              font-size: 18px;
+              color: #1e1e1e;
+            }
+          }
+        }
+        .skills {
+          .fs-18 {
+            font-size: 18px;
+          }
+          .progress {
+            margin-top: 8px;
+            background-color: #cde1f8;
+            border-radius: 0;
+            height: 11px;
+          }
+          span {
+            margin-top: 15px;
+            display: inline-block;
+          }
+        }
+      }
+
+      .caption {
+        h5::before {
+          content: "";
+          width: 100px;
+          height: 3px;
+          background-color: var(--primary-color);
+          top: 110%;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+#services {
+  padding-top: 48px;
+
+  .items {
+    .container {
+      .item {
+        padding: 40px 20px;
+        .icon {
+          width: 100px;
+          height: 100px;
+          font-size: 40px;
+          box-shadow: 0 0 0 10px var(--primary-color);
+          border-radius: 50%;
+          transition: all 0.5s;
+          color: rgba(0, 0, 0, 0.75);
+        }
+        &:hover .icon {
+          box-shadow: 0 0 0 10px #cde1f8;
+          background-color: var(--primary-color);
+          color: white;
+        }
+        .caption {
+          h2 {
+            font-size: 22px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.counter {
+  background: linear-gradient(#0077ffb3, #0077ffb3),
+    url(../images/../images/counters-bg.jpg) center center/ cover;
+  background-attachment: fixed;
+  padding-block: 128px;
+
+  .container {
+    .row {
+      .item {
+        .icon {
+          width: 60px;
+          height: 60px;
+          font-size: 25px;
+          box-shadow: 0 0 0 10px #cde1f8;
+          border-radius: 50%;
+          color: #cde1f8;
+        }
+      }
+    }
+  }
+}
+
+#portfolio {
+  padding-top: 48px;
+
+  .items {
+    .container {
+      .card {
+        .image {
+          img {
+            transition: all 0.5s;
+          }
+        }
+
+        &:hover .image img {
+          transform: scale(1.2);
+        }
+
+        .card-body {
+          h2 {
+            font-size: 19px;
+            font-weight: 500;
+            color: #1e1e1e;
+          }
+
+          div.text {
+            font-size: 13px;
+            span {
+              color: var(--primary-color);
+            }
+          }
+
+          .icon {
+            a {
+              i {
+                font-size: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonial {
+  background: linear-gradient(#0077ffb3, #0077ffb3),
+    url(../images/../images/overlay-bg.jpg) center center/ cover;
+  background-attachment: fixed;
+  padding-block: 128px;
+
+  .container {
+    .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          .caption {
+            margin-bottom: 70px;
+            h4 {
+              font-size: 22px;
+              font-weight: 600;
+            }
+            p {
+              padding-inline: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#blog {
+  padding-block: 64px;
+  .container {
+    .card {
+      .badge {
+        width: 90px;
+        padding: 10px 8px;
+      }
+      .card-body {
+        h5 {
+          transition: all 1s;
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  background: linear-gradient(#0077ffb3, #0077ffb3),
+    url(../images/../images/overlay-bg.jpg) center center/ cover;
+  background-attachment: fixed;
+  padding-block: 64px 48px;
+
+  .container {
+    padding: 48px;
+
+    .contact-title {
+      margin-bottom: 48px;
+      h5 {
+        font-size: 32px;
+        font-weight: 500;
+        color: #1e1e1e;
+      }
+
+      h5::before {
+        content: "";
+        width: 100px;
+        height: 3px;
+        background-color: var(--primary-color);
+        top: 110%;
+        position: absolute;
+      }
+    }
+
+    form {
+      button {
+        font-size: 19px;
+        padding: 10px 24px;
+        width: fit-content;
+        transition: all 0.4s;
+        &:hover {
+          background-color: #3393ff;
+          box-shadow: 0 0 0 4px #cde1f8;
+        }
+      }
+
+      textarea,
+      input {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 0px;
+      }
+    }
+
+    .info {
+      p {
+        font-size: 16px;
+        color: #4e4e4e;
+        i {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .icons {
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid var(--primary-color);
+        color: rgba(0, 0, 0, 0.75);
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          background-color: #3393ff;
+          box-shadow: 0 0 0 4px #cde1f8;
+        }
+        &:hover i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding-block: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
