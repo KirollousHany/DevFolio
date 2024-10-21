@@ -3,6 +3,21 @@
   scroll-padding-top: 80px;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 100vh;
+  box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+}
+
 body {
   background-color: #f5f5f5;
 }
